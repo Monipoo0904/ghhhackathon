@@ -106,14 +106,29 @@ footer h1{
     font-weight: bold; 
 }
 
-/* dog meme css*/
-.dogmeme{
-height: 475px;
-width: 700px;
-border: 5px solid black;
+.pet img{
+    border-radius: 2px;
+
+}
+
+.list-group-item{
+    background-color: #e2ece9;
+    color: #013a63;
+}
+
+.card{
+    color: #013a63;
+
 }
 
 
 
+/* dog meme css*/
+.dogmeme{
+    height: 475px;
+    width: 700px;
+    border: 5px solid black;
+    }
+    
 
 

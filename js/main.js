@@ -74,12 +74,16 @@ function showAnimals(pets) {
         div.classList.add("card", "card-body", "mb-3");
         div.innerHTML = `
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-4">
+        <img class="img-fluid card-img mt-2" src="${pet.photos[0] ? pet.photos[0].medium : "https://i.pinimg.com/564x/af/fb/c9/affbc96be98edecba473e0e630069b3b.jpg"
+            }">
+        </div>
+        <div class="col-sm-8">
           <h4>${pet.name} (${pet.age})</h4>
           <p class="text-secondary">${pet.breeds.primary}</p>
           <p>${pet.contact.address.city}, ${pet.contact.address.state} ${pet.contact.address.postcode
             }</p>
-          <ul class="list-group">
+          <ul class="list-group list-group-flush">
             <li class="list-group-item">${pet.contact.phone
                 ? `<li class="list-group-item">Phone: ${pet.contact.phone}</li>`
                 : ``
@@ -92,10 +96,7 @@ function showAnimals(pets) {
           </ul>
         
         </div>
-        <div class="col-sm-6">
-        <img class="img-fluid mt-2" src="${pet.photos[0] ? pet.photos[0].medium : ""
-            }">
-        </div>
+        
       </div>
     `;
         results.appendChild(div);
